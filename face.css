@@ -15,7 +15,7 @@ a{
 
 .container{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: rgba(112, 11, 112, 0.966);
 }
 
@@ -27,14 +27,15 @@ header{
 
 .header1{
     width: 40%;
+    padding-left: 100px;
+    padding-top: 20px;
 }
 
-.header1{
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    padding-left: 50px;
-    padding-top: 20px;
+.header1 img{
+    height: 100px;
+    width: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .header2{
@@ -75,7 +76,7 @@ header{
 }
 
 .content1{
-    padding-top: 150px;
+    padding-top: 100px;
     padding-left: 50px;
     color: white;
     position: relative;
@@ -137,7 +138,13 @@ section.activeness .content1{
     height: 350px;
     width: 400px;
     border-radius: 90%;
+    transition: scale 3s ease-in-out;
 }
+
+.header-img img:hover{
+    scale: 0.8;
+}
+
 span{
     color:  rgba(233, 41, 233, 0.966);
 }
@@ -261,6 +268,13 @@ footer h2{
     align-items: center;
     gap: 20px;
     width: 24%;
+}
+
+.logo1 img{
+    height: 100px;
+    width: 200px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
     
 .logo2{
