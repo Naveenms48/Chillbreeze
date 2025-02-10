@@ -9,6 +9,15 @@ a{
     cursor: pointer;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+.activeness{
+    left: 0;
+    opacity: 1;
+}
+
 .container{
     width: 100%;
     height: 80vh;
@@ -93,21 +102,16 @@ header{
     padding-top: 150px;
     padding-left: 50px;
     color: white;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out; 
 }
 
-@keyframes slideIn {
-    0% {
-      transform: translateX(-100%); /* Start from the left outside */
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0); /* End at normal position */
-      opacity: 1;
-    }
-  }   
-
+section.activeness .content1{
+    left: 0;
+    opacity: 1;
+}
 
 .content1 h3{
     padding-bottom: 25px;
@@ -137,6 +141,12 @@ header{
     margin-top: 10px;
     cursor: pointer;
     /* margin-left: 150px; */
+    transition: 2s all linear;
+}
+
+.btn:hover{
+     color: white;
+     background-color: yellowgreen;
 }
 
 .content1 a{
@@ -156,7 +166,7 @@ header{
 .line{
     height: 3px;
     width: 100px;
-    background-color: greenyellow;
+    background-color: rgba(112, 11, 112, 0.966);
 }
 
 /* About Us */
@@ -176,14 +186,21 @@ header{
     align-items: center;
     gap: 10px;
     padding: 40px 0;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out; 
+}
+
+section.activeness .about-head{
+    left: 0;
+    opacity: 1;
 }
 
 .about-head h1{
     font-size: 35px;
     font-weight: bold;
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
 }
 
 .about-content{
@@ -221,11 +238,25 @@ header{
     align-items: center;
     margin-left: 100px;
     margin-left: 100px;
+    position: relative;
+    right: -100%;
+    opacity: 0;
+    transition: right 3s ease-in-out, opacity 5s ease-in-out;
+}
+
+section.img-activeness .content-img{
+    right: 0;
+    opacity: 1;
+}
+
+.img-activeness{
+    right: 0;
+    opacity: 1;
 }
 
 .content-img img{
     height: 170px;
-    width: 170px;
+    width: 170px;  
 }
 
 .content-img img:nth-child(1),:nth-child(4){
@@ -250,12 +281,18 @@ header{
     justify-content: center;
     gap: 20px;
     align-items: center;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out; 
 }
 
+section.activeness .service-head{
+    left: 0;
+    opacity: 1;
+}
 .service-head h1{
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
     font-size: 40px;
     font-weight: bold;
 }
@@ -312,19 +349,22 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out; 
+}
+
+section.activeness .follow-head{
+    left: 0;
+    opacity: 1;
 }
 
 .follow-head h1{
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
     font-size: 40px;
     font-weight: bold;
     padding: 20px 0;
-}
-
-.follow-head .line{
-    background-color: greenyellow;
 }
 
 .follow h2{
@@ -344,6 +384,13 @@ header{
     gap: 40px;
     justify-content: center;
     margin: 50px 0;
+    position: relative;
+    opacity: 0;
+    transition: top 2s ease-in-out, opacity 5s ease-in-out;
+}
+
+section.img-activeness .follow-imgs{
+    opacity: 1;
 }
 
 .follow-imgs img{
@@ -356,7 +403,7 @@ header{
     margin: 0 45%;
     padding: 12px 20px;
     cursor: pointer;
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
 }
 
 /* Award */
@@ -372,12 +419,19 @@ header{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out; 
+}
+
+section.activeness .award-head{
+    left: 0;
+    opacity: 1;
 }
 
 .award-head h1{
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
     font-size: 40px;
     font-weight: bold;
 }

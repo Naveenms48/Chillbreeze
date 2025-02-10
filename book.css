@@ -8,6 +8,11 @@ a{
     text-decoration: none;
 }
 
+.activeness{
+    left: 0;
+    opacity: 1;
+}
+
 .container{
     width: 100%;
     height: 80vh;
@@ -73,21 +78,16 @@ header{
     padding-top: 150px;
     padding-left: 50px;
     color: white;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out;
 }
 
-@keyframes slideIn {
-    0% {
-      transform: translateX(-100%); /* Start from the left outside */
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0); /* End at normal position */
-      opacity: 1;
-    }
-  }   
-
+section.activeness .content1{
+    left: 0;
+    opacity: 1;
+}
 
 .content1 h3{
     padding-bottom: 25px;
@@ -116,7 +116,13 @@ header{
     font-size: 18px;
     margin-top: 10px;
     cursor: pointer;
+    transition: 2s all linear;
     /* margin-left: 150px; */
+}
+
+.btn:hover{
+    background-color: greenyellow;
+    color: white;
 }
 
 .content1 a{
@@ -133,14 +139,22 @@ header{
     border-radius: 90%;
 }
 span{
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
 }
+
 /* Services */
 .service-head{
     text-align: center;
     padding-top: 20px;
+    position: relative;
+    left: -100%;
     opacity: 0;
-    animation: slideIn 2s 3s forwards;
+    transition: left 2s ease-in-out, opacity 3s ease-in-out;
+}
+
+section.activeness .service-head{
+    left: 0;
+    opacity: 1;
 }
 
 .service-head h1{
@@ -157,7 +171,7 @@ span{
 .form p{
     font-size: 24px;
     font-weight: bold;
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
     padding: 50px 100px;
     text-align: center;
 }
@@ -165,7 +179,7 @@ span{
 .form-content label{
     font-size: 30px;
     font-weight: bolder;
-    color: greenyellow;
+    color: rgba(112, 11, 112, 0.966);
     padding-left: 50px;
 }
 
